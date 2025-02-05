@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "antha",
+	"version": "${version}",
+	"name": "Antha",
+	"description": "This is my first mod. I hope it can enhance your minecraft experience.",
+	"authors": [
+		"TSCKey and Dodo!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/TSCKey/Antha-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/antha/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tsckey.dodo.Antha"
+		],
+		"client": [
+			"net.tsckey.dodo.AnthaClient"
+		],
+		"fabric-datagen": [
+			"net.tsckey.dodo.AnthaDataGenerator"
+		]
+	},
+	"mixins": [
+		"antha.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

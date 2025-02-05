@@ -2,8 +2,8 @@ package net.tsckey.dodo;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ItemGroup;
+
+import net.tsckey.dodo.entity.ModEntities;
 import net.tsckey.dodo.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,5 +15,6 @@ public class Antha implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModEntities.registerModEntities();
 	}
 }
